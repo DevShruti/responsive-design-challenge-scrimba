@@ -2,12 +2,6 @@ html {
   font-size: 0.9rem;
 }
 
-@media (min-width: 600px) {
-  html {
-    font-size: 1.3125rem;
-  }
-}
-
 body {
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -17,12 +11,9 @@ body {
 }
 
 .container {
-  /* width: 90%;  */
-  /* border: 2px solid red;  */
   max-width: 570px;
   margin: 0 auto;
   padding: 0 2em;
-  /* background: pink; */
 }
 
 h1,
@@ -123,4 +114,16 @@ section {
 .btn:focus {
   background: #252525;
   color: #fff;
+}
+
+@media (min-width: 600px) {
+  html {
+    font-size: 1.3125rem;
+  }
+}
+
+@media (min-width: 750px) {
+  .splitter {
+    display: flex;
+  }
 }
