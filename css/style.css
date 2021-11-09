@@ -87,7 +87,13 @@ img {
 
 header,
 section {
-  padding: 6.25em 0;
+  padding: 3.25em 0;
+}
+
+header {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .inverse {
@@ -118,14 +124,19 @@ section {
 
 @media (min-width: 600px) {
   html {
-    font-size: 1.3125rem;
+    /* font-size: 1.3125rem; */
   }
 }
 
 @media (min-width: 750px) {
   .splitter {
     display: flex;
+    align-items: center;
   }
+
+  /* section {
+        background: lightblue;
+    } */
 
   .articles.inverse {
     background: #99d930;
@@ -156,5 +167,32 @@ section {
 
   .articles.inverse h2 {
     border-color: currentColor;
+  }
+
+  .portfolio {
+    background: #252525;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .portfolio .container {
+    max-width: 1200px;
+  }
+
+  .work {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .portfolio-item {
+    width: 28%;
+  }
+
+  .portfolio-item img {
+    height: 15em;
+    width: 100%;
+    object-fit: cover;
   }
 }
